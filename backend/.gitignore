@@ -1,0 +1,30 @@
+# Python-specific ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+
+# Processed images (if they are generated or temporary)
+processed_images/
+output/
+uploads/
+
+# IDE or editor files
+.vscode/
+.idea/
+
+# Miscellaneous
+*.log
+*.md
+
+#
+chroma_data

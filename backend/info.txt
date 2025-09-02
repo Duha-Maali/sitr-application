@@ -1,0 +1,33 @@
+POST http://localhost:5000/process
+JSON body should be with this format:
+{
+  "user_id": "user123",
+  "family_member_id": "member789",
+  "urls": [
+"https://quirky-sparrow-748.convex.cloud/api/storage/a903e9cb-4bd0-447d-8f9a-326ff96a5c50",
+  "https://quirky-sparrow-748.convex.cloud/api/storage/f51dda04-562f-4804-9660-a2312280dd53",
+  "https://quirky-sparrow-748.convex.cloud/api/storage/f3781a9e-7e2d-4c53-8fa8-ea206f8202dc",
+  "https://quirky-sparrow-748.convex.cloud/api/storage/3e5963f5-6198-44c3-a480-ceba67d57f9e",
+  "https://quirky-sparrow-748.convex.cloud/api/storage/0fbbc0ca-d409-46e9-8ebe-b25312caa9c0",
+  "https://quirky-sparrow-748.convex.cloud/api/storage/1e4441de-1f82-467f-86cc-cd37e8318a7c",
+  "https://quirky-sparrow-748."
+  ]
+}
+********************************************
+Response:
+{
+    "status": "queued",
+    "task_id": "ea0cd582-e433-48a3-b2c5-e644aa7fa45f"
+}
+status is one of these values:
+queued , processing, failed,  completed
+*********************************************
+polling request:
+GET http://localhost:5000/status/<task_id>
+***********************************************
+Response format:
+{
+    "errors": [],
+    "message": "Operation successful",
+    "status": "completed"
+}

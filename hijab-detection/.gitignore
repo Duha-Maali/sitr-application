@@ -1,0 +1,10 @@
+data/
+models/
+data_with_bboxes/
+sample/
+sitr_data/
+sample.zip
+data.zip
+__pycache__/
+*.pt
+*.pthsitr_data.zip

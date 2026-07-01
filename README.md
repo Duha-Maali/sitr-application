@@ -65,9 +65,10 @@ SITR-Application/
 ├── hijab-detection/   # Hijab classification model and related files
 └── data/
     └── chroma_data/   # Persistent face embeddings stored by ChromaDB
+```
 
 Each component was developed separately and integrated to form the complete SITR image privacy workflow.
-```
+
 ## Team Contributions
 
 This project was developed collaboratively by a three-member team:

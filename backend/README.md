@@ -116,9 +116,10 @@ backend/
 ├── requirements.txt       # Python dependencies
 ├── script.py              # Utility script for inspecting or managing ChromaDB records
 └── info.txt               # API notes and testing examples
+```
 
 The backend separates API routes, processing services, utility functions, and database configuration to keep responsibilities organized and make the code easier to maintain.
-```
+
 
 ## Limitations
 
